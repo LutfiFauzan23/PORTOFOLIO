@@ -317,7 +317,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <div class="section-title">
@@ -406,13 +405,12 @@
         </div>
     </footer>
 
-    <!-- Scroll to top button -->
     <div class="scroll-to-top" id="scrollToTop">
         <i class="fas fa-chevron-up"></i>
     </div>
 
     <script>
-        // Typing effect
+
         const typingText = document.getElementById('typing-text');
         const texts = ['Student', 'Enthusiast', 'Learner', 'Future Expert'];
         let textIndex = 0;
@@ -442,10 +440,8 @@
             }
         }
         
-        // Start typing effect
         setTimeout(type, 1000);
         
-        // Mobile menu toggle
         const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
         const navMenu = document.getElementById('nav-menu');
         
@@ -456,7 +452,6 @@
                 : '<i class="fas fa-bars"></i>';
         });
         
-        // Header scroll effect
         const header = document.getElementById('header');
         
         window.addEventListener('scroll', () => {
@@ -466,7 +461,7 @@
                 header.classList.remove('scrolled');
             }
             
-            // Scroll to top button visibility
+            
             const scrollToTop = document.getElementById('scrollToTop');
             if (window.scrollY > 300) {
                 scrollToTop.classList.add('active');
@@ -519,7 +514,6 @@
         };
         
         window.addEventListener('scroll', fadeInOnScroll);
-        // Initial check in case elements are already in view
         fadeInOnScroll();
         
         // Animated counter for stats
